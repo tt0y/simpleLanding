@@ -6,7 +6,7 @@ $email = htmlspecialchars($_POST['email']); // Получаем электрон
 $subject = 'Вам отправили сообщение с сайта ' . $_SERVER['SERVER_NAME']; // Тема сообщения
 $message = 'Вашим сайтом заинтересовался ' . $name . ' ('.$email.')';
 
-$addressToSend = 'tt0y@mail.ru';
+$addressToSend = '';
 
 if (isset($name) && isset($name)){
     if (mail($addressToSend, $subject, $message)){
